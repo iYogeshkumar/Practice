@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" id="myform">
+        <input type="text" id="name"/>
+        <input type="number" id="age"/>
+        <input type="number" id="mobile"/>
+        <input type="email" id="email"/>
+        <input type="submit"/>
+        <h1 id="details"></h1>
+    </form>
+</body>
+</html>
+<script>
+    document.getElementById("myform").addEventListener("submit", myfun);
+    var student=[];
+    function myfun(){
+        event.preventDefault();
+        var name = document.getElementById("name").value;
+        var age = document.getElementById("age").value;
+        var mobile = document.getElementById("mobile").value;
+        var email = document.getElementById("email").value;
+
+        var obj={
+        studentname:name,
+        studentage:age,
+        studentmobile:mobile,
+        studentemail:email,
+    };
+    student.push(obj);
+    console.log(student)
+    }
+</script>
