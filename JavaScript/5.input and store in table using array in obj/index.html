@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <form action="" id="myform">
+      <input type="text" id="name" placeholder="name" />
+      <input type="number" id="maths" placeholder="maths" />
+      <input type="number" id="science" placeholder="science" />
+      <input type="number" id="english" placeholder="english" />
+      <input type="submit" />
+    </form>
+
+    <table id="customers">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Maths</th>
+          <th>Science</th>
+          <th>English</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </body>
+</html>
+<script>
+  document.getElementById("myform").addEventListener("submit", showinputs);
+  let student = [];
+  function showinputs(event) {
+    event.preventDefault();
+    var studentname = document.getElementById("name").value;
+    var mathsmark = document.getElementById("maths").value;
+    var sciencemark = document.getElementById("science").value;
+    var englishmark = document.getElementById("english").value;
+
+    var obj = {
+      name: studentname,
+      maths: mathsmark,
+      science: sciencemark,
+      english: englishmark,
+    };
+
+    student.push(obj);
+    document.querySelector("tbody").innerHTML="";
+    student.map(function (event) {
+      var row = document.createElement("tr");
+
+      var col1 = document.createElement("td");
+      col1.innerText = event.name;
+
+      var col2 = document.createElement("td");
+      col2.innerText = event.maths;
+
+      var col3 = document.createElement("td");
+      col3.innerText = event.science;
+
+      var col4 = document.createElement("td");
+      col4.innerText = event.english;
+
+      row.append(col1, col2, col3, col4);
+      document.querySelector("tbody").append(row);
+    });
+  }
+</script>
