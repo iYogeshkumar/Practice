@@ -21,7 +21,7 @@ function todolist(event) {
 
 function createTable(todoArr){
     document.querySelector("tbody").innerHTML="";
-    todoArr.map(function (elem){
+    todoArr.map(function (elem,index){
         var tr=document.createElement("tr")
 
         var td1=document.createElement("td")
@@ -32,9 +32,19 @@ function createTable(todoArr){
 
         var td3=document.createElement("button")
         td3.innerText="delete";
+        td3.addEventListener("click",function(){
+            deleteTasks(index);
+        })
+
 
         tr.append(td1,td2,td3);
         document.querySelector("tbody").append(tr);
     })
 
+}
+function deleteTasks(index){
+    // console.log(index)
+    todoArr.splice(index,1)
+    localStorage.setItem("todoTodo",JSON.stringify(todoArr));
+    createTable(todoArr)
 }
