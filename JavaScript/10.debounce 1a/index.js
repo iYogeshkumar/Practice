@@ -18,4 +18,4 @@ const debouncefunction= function(fn,delay){
     }
 }
 
-const betterfunctions = debouncefunction(getdata,3000)
+const betterfunction = debouncefunction(getdata,3000)
