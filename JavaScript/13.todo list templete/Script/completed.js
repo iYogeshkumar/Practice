@@ -7,6 +7,7 @@ function displaydata(completedtodo) {
     var col1 = document.createElement("td");
     col1.innerText = e.name;
 
+    var col2 = document.createElement("td");
     col2.innerText = e.qty;
 
     var col3 = document.createElement("td");
