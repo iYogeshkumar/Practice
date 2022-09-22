@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 
-import Counter from './Components/Counterusestate/Counter';
+import { Counterprev } from './Components/Counterusestate/Counterprev';
 
 function App() {
   
@@ -9,7 +9,7 @@ function App() {
     <div className="App">
       {/* <Listname/> */}
       {/* <NameList/> */}
-      <Counter/>
+      <Counterprev/>
     </div>
   );
 }
