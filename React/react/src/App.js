@@ -1,14 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
-import Listname from './Components/Listname';
-import NameList from './Components/NameList';
+
+import Counter from './Components/Counterusestate/Counter';
 
 function App() {
   
   return (
     <div className="App">
       {/* <Listname/> */}
-      <NameList/>
+      {/* <NameList/> */}
+      <Counter/>
     </div>
   );
 }
