@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 
 import { Fetchusingaxios } from './Components/Fetchdata/Fetchusingaxios';
+import Fetchgituser from './Components/Fetchdata/Fetchgituser';
 
 function App() {
   
@@ -10,7 +11,9 @@ function App() {
       {/* <Listname/> */}
       {/* <NameList/> */}
       {/* <Counterprev/> */}
-      <Fetchusingaxios/>
+      {/* <Fetchusingaxios/> */}
+      <Fetchgituser/>
+      
     </div>
   );
 }
