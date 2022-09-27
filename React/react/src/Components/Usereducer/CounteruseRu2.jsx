@@ -29,7 +29,7 @@ const CounteruseRu2 = () => {
 
       <button onClick={()=>dispatch({type:"decrement", value:5})}>Decrement by 5</button>
 
-      <button onClick={()=>dispatch("reset")}>Reset</button>
+      <button onClick={()=>dispatch({type:"reset"})}>Reset</button>
     </div>
   )
 }
