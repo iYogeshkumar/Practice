@@ -20,7 +20,7 @@ const Counterusereducer = () => {
     const [count, dispatch] = useReducer(reducer,initialstate)
   return (
     <div>
-      <h1>count : {count}</h1>
+      <h1>Count : {count}</h1>
       <button onClick={()=>dispatch("increment")}>Increment</button>
       <button onClick={()=>dispatch("decrement")}>Decrement</button>
       <button onClick={()=>dispatch("reset")}>Reset</button>
