@@ -4,6 +4,7 @@ import './App.css';
 import { Fetchusingaxios } from './Components/Fetchdata/Fetchusingaxios';
 import Fetchgituser from './Components/Fetchdata/Fetchgituser';
 import Counterusereducer from './Components/Usereducer/Counterusereducer';
+import CounteruseRu2 from './Components/Usereducer/CounteruseRu2';
 
 function App() {
   
@@ -14,7 +15,8 @@ function App() {
       {/* <Counterprev/> */}
       {/* <Fetchusingaxios/> */}
       {/* <Fetchgituser/> */}
-      <Counterusereducer/>
+      {/* <Counterusereducer/> */}
+      <CounteruseRu2/>
       
     </div>
   );
