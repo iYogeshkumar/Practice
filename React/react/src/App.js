@@ -5,6 +5,7 @@ import { Fetchusingaxios } from './Components/Fetchdata/Fetchusingaxios';
 import Fetchgituser from './Components/Fetchdata/Fetchgituser';
 import Counterusereducer from './Components/Usereducer/Counterusereducer';
 import CounteruseRu2 from './Components/Usereducer/CounteruseRu2';
+import FetchuseReducer from './Components/Usereducer/FetchuseReducer';
 
 function App() {
   
@@ -16,7 +17,8 @@ function App() {
       {/* <Fetchusingaxios/> */}
       {/* <Fetchgituser/> */}
       {/* <Counterusereducer/> */}
-      <CounteruseRu2/>
+      {/* <CounteruseRu2/> */}
+      <FetchuseReducer/>
       
     </div>
   );
