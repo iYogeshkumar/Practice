@@ -6,6 +6,7 @@ import Fetchgituser from './Components/Fetchdata/Fetchgituser';
 import Counterusereducer from './Components/Usereducer/Counterusereducer';
 import CounteruseRu2 from './Components/Usereducer/CounteruseRu2';
 import FetchuseReducer from './Components/Usereducer/FetchuseReducer';
+import Counteruptoten from './Components/Counteruptoten/Counteruptoten';
 
 function App() {
   
@@ -18,8 +19,8 @@ function App() {
       {/* <Fetchgituser/> */}
       {/* <Counterusereducer/> */}
       {/* <CounteruseRu2/> */}
-      <FetchuseReducer/>
-      
+      {/* <FetchuseReducer/> */}
+      <Counteruptoten/> 
     </div>
   );
 }
