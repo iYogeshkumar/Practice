@@ -4,9 +4,11 @@ const Counteruptoten = () => {
   const [count,setCount]=useState(0);
 
   const inc =()=>{
+    if(count<10)
     setCount(count+1)
   }
   const dec =()=>{
+    if(count>0)
     setCount(count-1)
   }
   
