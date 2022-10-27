@@ -14,7 +14,7 @@ const Counteruptoten = () => {
   
   return (
     <div>
-      <div>counter increment upto 10 and not decrement by below 0</div>
+      <div>counter increment upto 10 and decrement upto 0 </div>
       <h1>{count}</h1>
       <button onClick={inc}>increment</button>
       <button onClick={dec}>Decrement</button>
