@@ -1,59 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tables</title>
-    <link rel="stylesheet" href="./index.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
     <table id="customers">
-        <thead>
-            <tr>
-                <th>name</th>
-                <th>maths</th>
-                <th>science</th>
-                <th>english</th>
-                <th>total</th>
-            </tr>
-        </thead>
-        <tbody>
+      <thead>
         <tr>
-        
+          <th>name</th>
+          <th>maths</th>
+          <th>science</th>
+          <th>english</th>
+          <th>total</th>
         </tr>
-        
-        </tbody>
+      </thead>
+      <tbody>
+        <tr></tr>
+      </tbody>
     </table>
-</body>
+  </body>
 </html>
 <script>
-    var obj=[
-        {name: 'ram', maths:50, science:60,english:50},
-        {name: 'shyam', maths:69, science:78,english:50},
-        {name: 'yog', maths:86, science:89,english:50},
-        {name: 'ak', maths:56, science:56,english:50}
-    ];
+  var obj = [
+    { name: "ram", maths: 50, science: 60, english: 50 },
+    { name: "shyam", maths: 69, science: 78, english: 50 },
+    { name: "yog", maths: 86, science: 89, english: 50 },
+    { name: "ak", maths: 56, science: 56, english: 50 },
+  ];
 
-    obj.map(function(elem){
-        var row=document.createElement("tr");
+  obj.map(function (elem) {
+    var row = document.createElement("tr");
 
-        var col1=document.createElement("td");
-        col1.innerText=elem.name;
+    var col1 = document.createElement("td");
+    col1.innerText = elem.name;
 
-        var col2=document.createElement("td");
-        col2.innerText=elem.maths;
+    var col2 = document.createElement("td");
+    col2.innerText = elem.maths;
 
-        var col3=document.createElement("td");
-        col3.innerText=elem.science;
+    var col3 = document.createElement("td");
+    col3.innerText = elem.science;
 
-        var col4=document.createElement("td");
-        col4.innerText=elem.english;
-        
-        var col5=document.createElement("td");
-        col5.innerText= elem.maths + elem.science + elem.english;
+    var col4 = document.createElement("td");
+    col4.innerText = elem.english;
 
-        row.append(col1,col2,col3,col4,col5);
-        document.querySelector("tbody").append(row);
-    })
+    var col5 = document.createElement("td");
+    col5.innerText = elem.maths + elem.science + elem.english;
+
+    row.append(col1, col2, col3, col4, col5);
+    document.querySelector("tbody").append(row);
+  });
 </script>
