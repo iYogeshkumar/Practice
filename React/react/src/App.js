@@ -8,6 +8,8 @@ import CounteruseRu2 from './Components/Usereducer/CounteruseRu2';
 import FetchuseReducer from './Components/Usereducer/FetchuseReducer';
 import Counteruptoten from './Components/Counteruptoten/Counteruptoten';
 import Fetch2 from './Components/Fetch2/Fetch2';
+import Searchbar from './Components/Searchbar/Searchbar';
+import Inputprint from './Components/Inputprint/Inputprint';
 
 function App() {
   
@@ -22,7 +24,9 @@ function App() {
       {/* <CounteruseRu2/> */}
       {/* <FetchuseReducer/> */}
       {/* <Counteruptoten/>  */}
-      <Fetch2/>
+      {/* <Fetch2/> */}
+      {/* <Searchbar/> */}
+      <Inputprint/>
     </div>
   );
 }
