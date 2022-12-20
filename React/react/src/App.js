@@ -10,6 +10,7 @@ import Counteruptoten from './Components/Counteruptoten/Counteruptoten';
 import Fetch2 from './Components/Fetch2/Fetch2';
 import Searchbar from './Components/Searchbar/Searchbar';
 import Inputprint from './Components/Inputprint/Inputprint';
+import Fetchandpassprops from './Components/Fetchanddisplayinnextpage/Fetchandpassprops';
 
 function App() {
   
@@ -26,7 +27,8 @@ function App() {
       {/* <Counteruptoten/>  */}
       {/* <Fetch2/> */}
       {/* <Searchbar/> */}
-      <Inputprint/>
+      {/* <Inputprint/> */}
+      <Fetchandpassprops/>
     </div>
   );
 }
