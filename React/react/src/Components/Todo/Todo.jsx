@@ -24,7 +24,7 @@ const Todo = () => {
     }
   return (
     <>
-    <div>Todo</div>
+    <div>Todos</div>
     <input type="text" value={input} placeholder="enter items" onChange={handleChange}/>
     <button onClick={addItem}>ADD Items</button>
     {item.map((el,id)=>{
